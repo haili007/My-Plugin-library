@@ -18,6 +18,10 @@ Github：https://github.com/moment/moment/
 
 Github：https://github.com/knrz/CSV.js
 
+##### 微信 js-sdk （用于微信分享等）
+
+下载：npm i -s weixin-js-sdk
+
 #### 效果类
 
 
