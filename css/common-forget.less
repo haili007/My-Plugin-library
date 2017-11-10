@@ -1,0 +1,32 @@
+/*boder-1px*/
+.boder-1px {
+    border-width: 1px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        pointer-events: none;
+        box-sizing: border-box;
+        border: 0 solid #ccc;
+    }
+}
+//单行省略
+.one-line-delete {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+//多行省略
+.more-line-delete {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
